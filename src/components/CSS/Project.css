@@ -1,0 +1,49 @@
+.Projects{
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.p-card{
+    width: 100%;
+}
+.p-image{
+    width: 100%; 
+}
+.p-projects{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-width: 500px;
+    margin: 10px 0px;
+}
+.p-image img{
+    width: 100%;
+    height: 400px;
+}
+@media only screen and (max-width:1000px){
+    .p-projects{
+        min-width: 80%; 
+    }
+    .Projects{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:280px){
+    .p-card{
+        width: 260px;
+    }
+    .p-projects{
+       min-width: 260px;  
+    }
+    .Projects{
+        padding: 0;
+    }
+    .p-image img{
+        height: 250px;
+    }
+}

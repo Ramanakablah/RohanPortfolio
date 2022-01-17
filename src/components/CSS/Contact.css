@@ -1,0 +1,121 @@
+.c-contact{
+    display: flex;
+    margin: 20px 0px;
+}
+
+.c-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 30px 20px;
+    background-color: #003566;
+}
+
+.c-contact-Medias{
+    flex: 1;
+    position: relative;
+}
+
+.c-form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    background-color: #FFC300;
+    padding: 20px 10px;
+}
+
+.c-form label , .btn{
+    font-size: 20px;
+    font-weight: 500;
+    color: #001D3D;
+}
+
+.Input-c-form{
+    outline: none;
+    border: none;
+    margin: 5px 0px ;
+    border-radius: 7px;
+}
+
+.c-form input{
+    padding: 5px 8px;
+}
+
+.Question-c-form{
+    border: none;
+    border-radius: 7px;
+}
+
+.head1{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    color: #FFC300;
+}
+
+.head11{
+   font-size: 30px;
+   text-align: center;
+   font-weight: 500;
+   color: #FFC300;
+}
+
+.c-socialmedia{
+    font-size: 36px;
+}
+
+.c-foot{
+    width: 60%;
+    justify-content: space-evenly;
+    padding: 10px 0px ;
+    margin: 10px 0px ;
+    display: none;
+}
+
+.styledtriangle{
+    clip-path: polygon(0 100%, 0 0, 100% 50%);
+    background-color: #FFC300;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    position: absolute;
+}
+   
+.c-socialhandles{
+    z-index: 2;
+    font-size: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    margin: 40px 0px;
+}
+
+.Instagram a{
+    background:linear-gradient(135deg,rgb(222, 12, 241), rgb(255, 238, 0));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.facebook a{
+    color: #4267B2;
+}
+
+.c-left-Letstalk{
+    padding: 10px;
+    font-size: 56px;
+    color: #001D3D;
+    font-weight: 700;
+}
+
+@media only screen and ( max-width:1000px){
+    .c-contact-Medias{
+        display: none;
+    }
+    .c-foot{
+        display: flex;
+    }
+}

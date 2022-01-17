@@ -1,0 +1,125 @@
+.Me-Intro{
+    width: 100vw;
+    display: flex;
+}
+.Person-Intro{   
+    color: #001d3d;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:500px;
+    margin-left: 30px;
+    padding: 20px;
+}
+.qualifications{
+    background-color:#FFC300;
+    height: 50px;
+    color: #001d3d;
+    overflow: hidden;
+}
+.qualities{
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding: 0px;
+}
+
+.quality-wrapper{
+    height: 100%;
+    animation: slide 10s ease-in-out infinite alternate ;
+}
+
+@keyframes slide {
+    25%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    75%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+.Name-of-Person{
+    font-size: 50px;
+    font-weight: 700;
+}
+.Person-Image{
+    flex: 1;
+    height: 100vh;
+    position: relative;
+}
+.h-person-image{
+     height: 100%;
+     position: absolute;
+     right: 0px;
+     object-fit: cover;
+}
+.styleBackground{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    clip-path: polygon(100% 0, 100% 100%, 50% 100%, 0 50%, 50% 0);
+    background-color: #FFD60A;
+}
+.i-quality{
+    font-size: 30px;
+    margin: 10px 0px ;
+}
+.intro{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+@media only screen and (max-width: 1000px)
+{
+    .Me-Intro{
+        flex-direction: column;
+    }
+    .Person-Image{
+        flex: none;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .Person-Image img{
+        right: -150px;
+    }
+    .Person-Intro{
+        width: 100vw;
+        margin: 0;
+    }
+}
+
+.slide{
+    animation-name: slide-top;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-top{
+    0%{transform:translateY(100%)}
+    100%{transform:translateY(0%)}
+}
+
+.slidel{
+    animation-name: slide-left;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-left{
+    0%{transform:translateX(100%)}
+    100%{transform:translateX(0%)}
+}
